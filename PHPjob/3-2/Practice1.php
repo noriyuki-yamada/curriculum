@@ -10,9 +10,9 @@ $FruitsQuantity = [3,2,10];
 
 //step2:単価を計算する関数を定義してください。
 //引数はフルーツの単価・個数の２つ、返り値は計算した合計値を返します。
-function getPrice($単価, $個数){
-    $合計値 = $単価 * $個数;
-    return $合計値;
+function getPrice($cost, $quantity){
+    $price = $cost * $quantity;
+    return $price;
 }
 
 //step3:繰り返しを使ってそれぞれのフルーツを書き出してください。

@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+h1{
+    margin: 0 auto;
+    color: white;
+    font-style: normal;
+    margin-top: 100px;
+    font-family: serif;
+}
+
+.line{
+    background-color: white;
+    height: 3px;
+}
+
+form{
+    margin: 0 auto;
+    margin-top: 50px;
+}

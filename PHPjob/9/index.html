@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- jQueryを動かすために必要な物がここに必要 -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <button class="click">クリック</button>
+    <script>
+
+    //  ここにjQueryを記入
+    //クリック回数を記録する変数を設定
+    n=0;
+    
+    //クリックされたとき起動する関数を設定
+    $('button').on("click",function(){
+        $('.left, .right').toggleClass('action');
+        n++;
+        if(n % 2 === 1){
+            //クリック回数が奇数の時カーテンを開くアニメーション
+            $('.left, .right').animate({width:'0%'},2000);
+        }else{
+            //クリック回数が偶数の時カーテンを閉じるアニメーション
+            $('.left, .right').animate({width:'50%'},2000);
+        }
+    });
+
+    </script>
+</body>
+</html>

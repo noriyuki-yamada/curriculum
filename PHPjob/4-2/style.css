@@ -1,0 +1,48 @@
+body{
+    width: 1000px;
+}
+
+header{
+    height: 120px;
+    display: flex;
+}
+
+.pic{
+    width: 200px;
+    background-color: #add8e6;
+}
+
+.welcome, .login_time{
+    height: 60px;
+    width: 800px;
+    display:flex;
+    justify-content: end;
+    align-items:center;
+}
+
+.welcome{
+    background-color: #87ceeb;
+}
+
+.login_time{
+    background-color: #0ff;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+th{
+    background-color: #87ceeb;
+}
+
+td{
+    background-color: #e0ffff;
+}
+
+footer{
+    height: 50px;
+    background-color: #00ced1;
+}
